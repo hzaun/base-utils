@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HzaunAppBase</string>
+    <string name="placeholder_title">Title</string>
+    <string name="placeholder_action">Action</string>
+</resources>

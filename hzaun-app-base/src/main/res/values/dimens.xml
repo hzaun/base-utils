@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="icon_size">30dp</dimen>
+    <dimen name="material_margin_xxl">128dp</dimen>
+    <dimen name="material_margin_xll">80dp</dimen>
+    <dimen name="material_margin_xl">64dp</dimen>
+    <dimen name="material_margin_lll">48dp</dimen>
+    <dimen name="material_margin_ll">40dp</dimen>
+    <dimen name="material_margin_large">32dp</dimen>
+    <dimen name="material_margin_ml">24dp</dimen>
+    <dimen name="material_margin_medium">16dp</dimen>
+    <dimen name="material_margin_sm">12dp</dimen>
+    <dimen name="material_margin_smm">10dp</dimen>
+    <dimen name="material_margin_small">8dp</dimen>
+    <dimen name="material_margin_s">6dp</dimen>
+    <dimen name="material_margin_xs">4dp</dimen>
+    <dimen name="material_margin_xxs">2dp</dimen>
+
+    <dimen name="material_view_width">300dp</dimen>
+    <dimen name="material_view_width_large">350dp</dimen>
+    <dimen name="material_view_height">50dp</dimen>
+    <dimen name="material_spinner_width">222dp</dimen>
+
+    <!--Button-->
+    <dimen name="material_button_radius">2dp</dimen>
+
+    <!--Card-->
+    <dimen name="material_card_size">200dp</dimen>
+    <dimen name="material_card_status">8dp</dimen>
+
+    <!--View-->
+    <dimen name="material_view_size">50dp</dimen>
+    <dimen name="material_form_height">60dp</dimen>
+    <dimen name="material_icon_size">65dp</dimen>
+    <dimen name="material_icon_size_small">40dp</dimen>
+
+    <!--Header-->
+    <dimen name="header_image_height_top">136dp</dimen>
+    <dimen name="header_image_height_small">224dp</dimen>
+    <dimen name="header_image_height">256dp</dimen>
+    <dimen name="header_image_height_large">296dp</dimen>
+
+    <!--Text-->
+    <dimen name="ts_xxs">10sp</dimen>
+    <dimen name="ts_xs">12sp</dimen>
+    <dimen name="ts_small">14sp</dimen>
+    <dimen name="ts_sm">16sp</dimen>
+    <dimen name="ts_medium">18sp</dimen>
+    <dimen name="ts_mml">21sp</dimen>
+    <dimen name="ts_mll">24sp</dimen>
+    <dimen name="ts_36">36sp</dimen>
+    <dimen name="ts_large">48sp</dimen>
+    <dimen name="ts_xl">64sp</dimen>
+
+    <!--Gallery View-->
+    <dimen name="photo_width">120dp</dimen>
+    <dimen name="photo_height">112dp</dimen>
+</resources>
