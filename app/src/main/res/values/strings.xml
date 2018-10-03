@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">It\'s Anouk</string>
     <string name="type_a_message">Type a message</string>
+    <string name="activity_main">Welcome!</string>
 </resources>

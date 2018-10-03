@@ -37,6 +37,12 @@ public class BaseUtils {
         this.context = context;
     }
 
+    public boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
+
     public static boolean isOnline(Context _context) {
         ConnectivityManager cm = (ConnectivityManager) _context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
@@ -210,7 +216,7 @@ public class BaseUtils {
         }
     }
 
-    public void getLoader(Context context) {
+    public void getLoader() {
         progressDialog = new ProgressDialog(context, R.style.AppDialogTheme);
         progressDialog.setCancelable(false);
         progressDialog.getWindow().setGravity(Gravity.CENTER);

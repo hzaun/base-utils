@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.nuzharukiya.hzaun_app_base.BaseActivity;
+import com.nuzharukiya.hzaun_app_base.BaseUtils;
 import com.nuzharukiya.hzaun_app_base.UIComponents;
 import com.nuzharukiya.hzaun_volley_helper.Connector;
 import com.nuzharukiya.hzaun_volley_helper.VolleyListener;
@@ -24,6 +25,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.nuzharukiya.hzaun_app_base.BaseUtils.isOnline;
 import static com.nuzharukiya.hzaun_volley_helper.Connector.MethodType.POST;
 
 public class StartingPoint extends BaseActivity implements
@@ -56,6 +58,9 @@ public class StartingPoint extends BaseActivity implements
 
         connector = new Connector();
         uiComponents = new UIComponents(context, true);
+        uiComponents.setToolbarItems(R.drawable.ic_menu, R.string.activity_main);
+
+        baseUtils = new BaseUtils(context);
     }
 
     @Override
@@ -75,6 +80,23 @@ public class StartingPoint extends BaseActivity implements
         chatList.clear();
         // Add data
         chatAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void runFactory() {
+        super.runFactory();
+    }
+
+    public void fetchData() {
+        if (baseUtils.isOnline()) {
+            baseUtils.getLoader();
+
+            // call API
+        }
+    }
+
+    public void parseData() {
+        baseUtils.dismissLoader();
     }
 
     private void initChat() {
