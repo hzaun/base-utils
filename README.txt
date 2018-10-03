@@ -18,7 +18,7 @@
 2. In your app build.gradle
 
         dependencies {
-	        implementation 'com.github.hzaun:base-utils:1.0.2'
+	        implementation 'com.github.hzaun:base-utils:v1.0.2'
 	}
 
 ### How to use::

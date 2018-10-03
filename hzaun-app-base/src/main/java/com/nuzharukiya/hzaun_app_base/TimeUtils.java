@@ -18,6 +18,11 @@ public class TimeUtils {
     private static final SimpleDateFormat SDF_TYPE_2 = new SimpleDateFormat("hh:mm aa", Locale.US);
     private static final SimpleDateFormat SDF_TYPE_3 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US);
 
+    private static final SimpleDateFormat SDF_24_HOURS = new SimpleDateFormat("HH:mm", Locale.US);
+    private static final SimpleDateFormat SDF_12_HOURS = new SimpleDateFormat("hh:mm a", Locale.US);
+    private static final SimpleDateFormat SDF_DATE_YYMMDD = new SimpleDateFormat("yyMMdd", Locale.US);
+    private static final SimpleDateFormat SDF_DATE_PRETTY = new SimpleDateFormat("dd MMM, YYYY", Locale.US);
+
     public TimeUtils() {
     }
 
@@ -151,7 +156,7 @@ public class TimeUtils {
         return null;
     }
 
-    public String prettyDate(String date) {
+    public String prettyDate_context(String date) {
 
         String prettyDate = "";
 
@@ -228,5 +233,32 @@ public class TimeUtils {
             e.printStackTrace();
         }
         return "";
+    }
+
+    public static String convert24To12(String timeIn24) {
+        try {
+            return SDF_12_HOURS.format(SDF_24_HOURS.parse(timeIn24));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    public static String prettyDate(String dateInYYMMDD) {
+        try {
+            return SDF_DATE_PRETTY.format(SDF_DATE_YYMMDD.parse(dateInYYMMDD));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    public static long convert24ToMillis(String timeIn24) {
+        try {
+            return SDF_24_HOURS.parse(timeIn24).getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }
