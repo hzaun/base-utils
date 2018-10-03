@@ -1,8 +1,8 @@
-# base-utils
+base-utils
 
 
 
-### To setup the library:
+To setup the library:
 
 
 
@@ -21,9 +21,9 @@
 	        implementation 'com.github.hzaun:base-utils:v1.0.2'
 	}
 
-### How to use::
+How to use::
 
-###### activity_main.xml
+activity_main.xml
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -39,7 +39,7 @@
     ...
 </android.support.constraint.ConstraintLayout>
 
-###### MainActivity.class
+MainActivity.class
 
 public class MainActivity extends BaseActivity {
 
