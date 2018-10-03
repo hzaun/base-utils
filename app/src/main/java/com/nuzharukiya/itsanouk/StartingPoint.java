@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.nuzharukiya.hzaun_app_base.BaseActivity;
+import com.nuzharukiya.hzaun_app_base.UIComponents;
 import com.nuzharukiya.hzaun_volley_helper.Connector;
 import com.nuzharukiya.hzaun_volley_helper.VolleyListener;
 import com.nuzharukiya.itsanouk.adapters.ChatAdapter;
@@ -54,6 +55,7 @@ public class StartingPoint extends BaseActivity implements
         context = this;
 
         connector = new Connector();
+        uiComponents = new UIComponents(context, true);
     }
 
     @Override

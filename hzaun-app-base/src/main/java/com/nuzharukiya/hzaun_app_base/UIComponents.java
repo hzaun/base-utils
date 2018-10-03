@@ -57,7 +57,7 @@ public class UIComponents {
     private void getAppTheme() {
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(R.attr.colorPrimary, typedValue, true);
-        STATUS_BAR_COLOR = typedValue.data;
+        STATUS_BAR_COLOR = typedValue.resourceId;
     }
 
     private void initApp() {
