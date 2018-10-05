@@ -1,6 +1,5 @@
 package com.nuzharukiya.itsanouk;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -23,9 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
-import static com.nuzharukiya.hzaun_app_base.BaseUtils.isOnline;
 import static com.nuzharukiya.hzaun_volley_helper.Connector.MethodType.POST;
 
 public class StartingPoint extends BaseActivity implements
@@ -66,7 +63,6 @@ public class StartingPoint extends BaseActivity implements
     @Override
     public void initViews() {
         super.initViews();
-        ButterKnife.bind((Activity) context);
 
         ivSend.setOnClickListener(this);
 

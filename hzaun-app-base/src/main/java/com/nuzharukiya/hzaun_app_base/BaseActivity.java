@@ -1,7 +1,6 @@
 package com.nuzharukiya.hzaun_app_base;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +17,7 @@ public abstract class BaseActivity extends AppCompatActivity implements
 
     protected UIComponents uiComponents;
     protected BaseUtils baseUtils;
+    protected TimeUtils timeUtils;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,5 +55,9 @@ public abstract class BaseActivity extends AppCompatActivity implements
 
     public BaseUtils getBaseUtils() {
         return baseUtils;
+    }
+
+    public UIComponents getUiComponents() {
+        return uiComponents;
     }
 }

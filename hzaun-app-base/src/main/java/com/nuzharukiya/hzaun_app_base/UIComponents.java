@@ -396,6 +396,12 @@ public class UIComponents {
                         WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 
+    public void adjustResize() {
+        ((Activity) context).getWindow().setSoftInputMode(
+                WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE |
+                        WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+    }
+
     /**
      * Force hide keyboard
      */
