@@ -24,7 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/material_margin_medium"
-        android:background="@drawable/material_round_outline"
+        android:background="@drawable/hz_round_outline"
         android:hint="@string/type_a_message"
         android:inputType="text"
         android:padding="@dimen/material_margin_small"

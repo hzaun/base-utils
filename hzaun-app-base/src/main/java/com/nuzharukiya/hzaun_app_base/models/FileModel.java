@@ -21,6 +21,8 @@ public class FileModel implements Serializable {
     private String createdByName = "";
     private String pdf_tempFileName = "";
 
+    private boolean bIsDefault = false;
+
     public FileModel() {
     }
 
@@ -124,5 +126,12 @@ public class FileModel implements Serializable {
     public void setPdf_tempFileName(String pdf_tempFileName) {
         this.pdf_tempFileName = pdf_tempFileName;
     }
-}
 
+    public boolean isbDefault() {
+        return bIsDefault;
+    }
+
+    public void setbIsDefault(boolean bIsDefault) {
+        this.bIsDefault = bIsDefault;
+    }
+}
